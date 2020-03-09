@@ -17,6 +17,21 @@ reverseString("hello");
 #### Answers
 
 ```javascript
+function reverseString(str) {
 
+  let result = [];
+
+  str = str.split("");
+
+  for (let i = str.length - 1; i >= 0; i--) {
+    result.push(str[i]);
+  }
+
+  result = result.join("");
+
+  return result;
+}
+
+reverseString("hello");
 
 ```
